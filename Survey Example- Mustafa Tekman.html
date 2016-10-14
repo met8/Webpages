@@ -1,0 +1,400 @@
+<!-- UseSpiridon_Survey -->
+
+<style>
+
+body {
+  background: url(https://siemensnwe.service-now.com/PooleB2.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: 'Monospace', sans-serif;
+}
+
+.login-card {
+  padding: 20px;
+  width: 700px;
+  background: rgba(255, 255, 255, .0); 
+  margin: 0 auto 10px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  color:#ffffff;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  
+}
+
+.login-card h1 {
+  font-weight: 100;
+  text-align: center;
+  font-size: 2.3em;
+}
+
+.login-card button {
+  width: 100%;
+  height: 75px;
+  font-weight: bold !important;
+  font-size: 27px;
+  display: block;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.login-card input[type=text],textarea,select{
+  height: 45px;
+  font-size: 18px;
+  width: 100%;
+  resize:vertical;
+  margin-bottom: 10px;
+  -webkit-appearance: none;
+  background: #fff;
+  border: 1px solid #d9d9d9;
+  border-top: 1px solid #c0c0c0;
+   border-radius: 6px; 
+  padding: 10px 20px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  opacity: 0.9;
+  
+}
+
+.login-card input[id=date] {
+  height: 28px;
+  font-size: 16px;
+  width: 45%;
+  margin-bottom: 10px;
+  -webkit-appearance: none;
+  background: #fff;
+  border: 1px solid #d9d9d9;
+  border-top: 1px solid #c0c0c0;
+  /* border-radius: 2px; */
+  padding: 0 8px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+.login-card input[type=text] :hover, textarea :hover {
+  border: 1px solid #b9b9b9;
+  border-top: 1px solid #a0a0a0;
+  -moz-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+  -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+  box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+}
+
+.login-card label {
+  text-align: center;
+  font-size: 22px;
+   
+}
+
+
+.login-submit {
+  /* border: 1px solid #3079ed  */
+  border: 0px !important;
+  color: #ffffff !important ;
+  text-shadow: 0 1px rgba(0,0,0,0.1); 
+  background-color: #4ca5e0 !important;
+  transition: 0.5s
+  border-radius: 6px !important;
+  cursor: pointer;
+/* background-image: -webkit-gradient(linear, 0 0, 0 100%,   from(#4d90fe), to(#4787ed)); */
+}
+
+.login-submit:hover {
+  /* border: 1px solid #2f5bb7; */
+  border: 0px;
+  text-shadow: 0 1px rgba(0,0,0,0.3);
+  background-color: #0777bd !important;
+  border-radius: 6px;
+  /* background-image: -webkit-gradient(linear, 0 0, 0 100%,   from(#4d90fe), to(#357ae8)); */
+}
+
+.login-cancel {
+  /* border: 1px solid #3079ed; */
+  border: 0px !important;
+  color: #ffffff !important;
+  text-shadow: 0 1px rgba(0,0,0,0.1); 
+  background-color: #f94040 !important;
+  transition: 0.5s
+  /* background-image: -webkit-gradient(linear, 0 0, 0 100%,   from(#4d90fe), to(#4787ed)); */
+}
+
+
+.login-cancel:hover {
+  /* border: 1px solid #2f5bb7; */
+  border: 0px;
+  text-shadow: 0 1px rgba(0,0,0,0.3);
+  background-color: #af0000 !important;
+  /* background-image: -webkit-gradient(linear, 0 0, 0 100%,   from(#4d90fe), to(#357ae8)); */
+}
+
+
+
+.login-card a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 400;
+  text-align: center;
+  display: inline-block;
+  opacity: 0.6;
+  transition: opacity ease 0.5s;
+}
+
+.login-card a:hover {
+  opacity: 1;
+}
+
+.login-help {
+  width: 100%;
+  text-align: center;
+  font-size: 12px;
+}
+
+
+#questionsDiv0 li{
+
+list-style-type:none;
+font-size: 20px;
+cursor:pointer;
+
+}
+
+
+#questionsDiv1 li{
+
+display: inline-block;
+list-style-type:none;
+font-size: 20px;
+width: 13%;
+margin-left: 1px;
+margin-right: 1px;
+cursor:pointer;
+}
+
+#questionsDiv2 li{
+
+list-style-type:none;
+font-size: 20px;
+cursor:pointer;
+}
+
+input[type=checkbox]{
+
+transform: scale(1.1);
+
+-webkit-transform: scale(1.1);
+}
+
+ul li {
+
+  -webkit-border-radius: 6;
+  -moz-border-radius: 6;
+  border-radius: 6px;
+  font-family: Arial;
+  color: #000000;
+  font-size: 20px;
+  background: #FFFFFF;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  opacity: 0.8;
+
+  
+}
+
+ul li:hover {
+
+  -webkit-border-radius: 6;
+  -moz-border-radius: 6;
+  border-radius: 6px;
+  font-family: Arial;
+  color: #000000;
+  font-size: 20px;
+  background: #54bbff;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  transition: 0.2s;
+  
+}
+
+.active {
+
+  
+  color: #ffffff;
+  background: #4ca5e0;
+  
+
+}
+
+.inactive {
+
+  
+  color: #ffffff;
+  background: #dbdbdb;
+  
+
+}
+
+ul {
+
+padding:0;
+
+}
+
+.unselectable {
+
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+
+
+}
+
+</style>
+<html>
+
+<body onLoad="tester()">
+
+
+  <div class="login-card">
+    
+  <div>
+   <p><label for ="text" id="first">Which class did you attend?</label></p>
+  <ul  id="questionsDiv0">
+  <li value="test"> Answer 1 </li> 
+  <li value="test"> Answer 2 </li>
+  </ul>
+  <br></br>
+   <p><label for ="text">Please rate the class (5=highest rating, 1=lowest rating)</label></p>
+  <ul id="questionsDiv1">
+  <li> 5 </li>
+  <li> 4 </li>
+  <li> 3 </li>
+  <li> 2 </li>
+  <li> 1 </li>
+  </ul>
+  <br></br>
+   <p><label for ="text">Which topics would you like to know more about in a UseSpiridon masterclass? (You can select more than one topic)</label></p>
+  <ul id="questionsDiv2">
+  <li value="test2"> Answer 1 </li> 
+  <li value="test2"> Answer 2 </li>
+  <li value="test2"> Answer 3 </li>
+  <li value="test2"> Answer 4 </li>
+  <li value="test2"> Answer 5 </li>
+  <li value="test2"> Answer 6 </li>
+  </ul>
+  <br> </br>
+  
+  <p><label for ="text">Other</label></p>
+    <input type="text" name="other" id="other" style="color:black;"></input>
+  
+
+  <p><label for ="text">Any comments?</label></p>
+    <textarea rows="2" cols="50" name="comments" id="comments" style="color:black;"> </textarea>
+
+
+<br></br>
+    <button id="submitBtn" onClick = "submitSurvey()" class="login login-submit">Submit</button>
+    
+     </div>
+    
+  
+  
+</div>
+
+
+
+
+</body>
+
+</html>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script>
+var referenceNumberVar;
+var surveyTypeVar = "Face to Face";
+var countryVar ="BE";
+var languageVar ="FR";
+var locationVar;
+var dateVar;
+var type1Var;
+var value1Var;
+var type2Var;
+var value2Var;
+var type3Var;
+var value3Var;
+var type4Var;
+var value4Var;
+var type5var;
+var value5var;
+var questionValue;
+var questionValueArray = [];
+var questionChoiceVar;
+var answerValueArray = [];
+var questionsArray = ["Q1","Q2","Q3"];
+var index;
+var savedArray = [];
+var answersArray =[];
+var q0AnswersArray = [];
+var q1AnswersArray = [];
+var q2AnswersArray = [];
+var displayValuePL;
+var displayValuePT;
+var displayValueFR; 
+var displayValueES;
+var displayValueDU;
+var displayValuePLArray = [];
+var displayValuePTArray = [];
+var displayValueFRArray = []; 
+var displayValueESArray = [];
+var displayValueDUArray = [];
+var today;
+
+
+
+function submitSurvey()
+{
+	
+
+var alertText = "";
+var selectedOption = $("ul#questionsDiv0 li.active").attr('value');
+
+
+if(selectedOption == null) {
+	var firstP = $("#first");
+	alert("S'il vous plaît remplir le champ obligatoire suivante:" + "\n" + '"' + firstP.text().substr(0, firstP.text().length - 1) + '"');
+	firstP.css("color", "red");
+	
+} else {
+	
+alert("Thank you!");
+window.location.assign("http://www.siemens.co.uk")
+}
+}
+
+$("ul#questionsDiv0").on('click','li', function() {
+    $(this).toggleClass("active");
+    $(this).siblings().removeClass("active");
+	$("#first").css('color', 'white');
+
+});
+
+$("ul#questionsDiv1").on('click','li', function() {
+    $(this).toggleClass("active");
+    $(this).siblings().removeClass("active");
+
+});
+
+$("ul#questionsDiv2").on('click','li', function() {
+    $(this).toggleClass("active");
+
+});
+
+
+
+</script>
