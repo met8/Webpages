@@ -1,0 +1,14 @@
+.content {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    }
+
+#forum {
+	margin: 0% 20% 0% 20%;
+}
+body {
+	background-image: url("background.jpg");
+	/*background-repeat: no-repeat;*/
+    background-size: auto 100% ;
+}

@@ -1,0 +1,64 @@
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="bootstrap.css" />
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+    <link rel="stylesheet" type="text/css" href="main2.css" />
+
+    <meta charset="UTF-8">
+
+
+</head>
+<body>
+
+<div class="content">
+
+		<div id="forum">
+		<form>
+  <div class="form-group">
+    <label for="email">New password:</label>
+    <input type="email" class="form-control" placeholder="New Password" id="email">
+  </div>
+  <div class="form-group">
+    <label for="pwd">Confirm new password:</label>
+    <input type="password" class="form-control" placeholder="Confirm new password" id="pwd">
+  </div>
+
+  <button type="submit" class="btn btn-default">Change password</button>
+</form>
+		</div>
+		
+</div>
+
+</body>
+
+<script src="http://www.google.com/jsapi" type="text/javascript"></script>
+ 
+<script type="text/javascript">google.load("jquery", "1.3.2");</script>
+ 
+<script type="text/javascript">
+ 
+	$(document).ready(function(){
+ 
+		var tech = getUrlParameter('technology');
+		$("#email").html(tech);	
+ 
+	});
+	
+	var getUrlParameter = function getUrlParameter(sParam) {
+    var sPageURL = decodeURIComponent(window.location.search.substring(1)),
+        sURLVariables = sPageURL.split('&'),
+        sParameterName,
+        i;
+
+    for (i = 0; i < sURLVariables.length; i++) {
+        sParameterName = sURLVariables[i].split('=');
+
+        if (sParameterName[0] === sParam) {
+            return sParameterName[1] === undefined ? true : sParameterName[1];
+        }
+    }
+};
+ 
+</script>
+</html>
