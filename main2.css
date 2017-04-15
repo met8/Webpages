@@ -9,21 +9,14 @@
 }
 */
 div.row {
-	/*height: 100%;
-	
-
+	height: 100%;
 	background-image: url("https://met8.github.io/background.jpg");
 	background-repeat: no-repeat;
 	background-color: white;
 	border: 2px solid grey;
 	background-size: cover !important;
-height: 100vh !important;
-overflow: hidden !important;
-*/
-    display: flex;
-
-    /* flex-direction: column;*/
-    align-items: center; 
+        display: flex;
+        align-items: center; 
 }
 	
 .container {
@@ -51,11 +44,4 @@ h2, p {
 	color: white;
 }
 
-body {
-	background-image: url("https://met8.github.io/background.jpg");
-	background-repeat: no-repeat;
-	background-color: white;
-	border: 2px solid grey;
-	background-size: cover !important;
-}
 
