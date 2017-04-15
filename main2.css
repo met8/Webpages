@@ -17,7 +17,6 @@ div.row {
         -o-background-size: auto 100%; /*opera*/
         background-size: auto 100%; /*generic*/	
 	background-position: center center;
-        background-attachment:fixed;
 	border: 2px solid grey;
     display: flex;
 
