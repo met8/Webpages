@@ -12,6 +12,9 @@ div.row {
 	height: 100%;
 	background-image: url("https://met8.github.io/background.jpg");
 	background-repeat: no-repeat;
+	        -webkit-background-size: auto 100%; /*for webKit*/
+        -moz-background-size: auto 100%; /*Mozilla*/
+        -o-background-size: auto 100%; /*opera*/
         background-size: auto 100%; /*generic*/	border: 2px solid grey;
     display: flex;
 
