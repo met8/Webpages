@@ -1,14 +1,38 @@
-.content {
+/*.content {
     position: relative;
     top: 50%;
     transform: translateY(-50%);
     }
-
+*/
 #forum {
 	margin: 0% 20% 0% 20%;
 }
-#ourCol {
-	background-image: url("background.jpg");
-	/*background-repeat: no-repeat;*/
-    background-size: auto 100% ;
+div.row {
+	height: 100%;
+	background-image: url("https://met8.github.io/background.jpg");
+	background-repeat: no-repeat;
+    background-size: cover ;
+	background-position: center;
+	border: 2px solid grey;
+	
 }
+
+#forum {
+	
+  margin-top: 15%;
+  vertical-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+	border: 2px solid grey;
+	padding: 15px;
+}
+
+label {
+	color: white;
+}
+
+h2, p {
+	text-align: center;
+	color: white;
+}
+
+
