@@ -45,7 +45,7 @@ h2, p {
 }
 
 html{
- min-height:100%;
+    height:100%;
  }
 body{
  min-height:100%;
