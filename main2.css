@@ -12,10 +12,10 @@
  	height: 100%;
  	background-image: url("https://met8.github.io/background.jpg");
  	background-repeat: no-repeat;
- 	-webkit-background-size: 100%; /*for webKit*/
-         -moz-background-size: cover; /*Mozilla*/
-          -o-background-size: cover; /*opera*/
-          background-size: cover; /*generic*/	
+ 	-webkit-background-size: cover%; /*for webKit*/
+  -moz-background-size: cover; /*Mozilla*/
+  -o-background-size: cover; /*opera*/
+  background-size: cover; /*generic*/	
   	background-color: white;
   	border: 2px solid grey;
   
