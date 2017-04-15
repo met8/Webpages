@@ -15,7 +15,7 @@ div.row {
 	        -webkit-background-size: auto 100%; /*for webKit*/
         -moz-background-size: auto 100%; /*Mozilla*/
         -o-background-size: auto 100%; /*opera*/
-        background-size: cover; /*generic*/	
+        background-size: auto 100%; /*generic*/	
 	border: 2px solid grey;
     display: flex;
 
