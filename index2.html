@@ -4,7 +4,7 @@
     <link rel="stylesheet" type="text/css" href="main2.css" />
 
     <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
 
@@ -50,9 +50,12 @@
 <script type="text/javascript">
  
 	$(document).ready(function(){
+	
+		alert("hi");
  
-		var tech = getUrlParameter('technology');
-		$("#email").html(tech);	
+		var token = getUrlParameter('token');
+		
+		alert(token)
  
 	});
 	
