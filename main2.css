@@ -10,8 +10,7 @@
  */
  div.row {
  	height: 100%;
- 	background-image: url("https://met8.github.io/background.jpg");
- 	background-repeat: no-repeat;
+ 	background-image: url("https://met8.github.io/background.jpg") no-repeat;
  	-webkit-background-size: cover%; /*for webKit*/
   -moz-background-size: cover; /*Mozilla*/
   -o-background-size: cover; /*opera*/
