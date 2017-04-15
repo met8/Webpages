@@ -17,6 +17,7 @@ div.row {
         -o-background-size: cover; /*opera*/
         background-size: cover; /*generic*/	
 	background-color: white;
+	background-attachment: scroll;
 	border: 2px solid grey;
 	    overflow-y: scroll;
 
