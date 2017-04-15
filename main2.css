@@ -28,7 +28,8 @@ div.row {
 }
 	
 .container {
-	    overflow-y: hidden;
+height: 100vh; /* set viewport constraint */
+min-height: 100%; /* enforce height */
 
 }
 
@@ -51,4 +52,7 @@ h2, p {
 	text-align: center;
 	color: white;
 }
-
+html {
+height: 100vh; /* set viewport constraint */
+min-height: 100%; /* enforce height */
+}
