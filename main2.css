@@ -18,12 +18,18 @@ div.row {
         background-size: cover; /*generic*/	
 	background-color: white;
 	border: 2px solid grey;
+	    overflow-y: scroll;
+
     display: flex;
 
     /* flex-direction: column;*/
     align-items: center; 
 }
 	
+.container {
+	    overflow-y: hidden;
+
+}
 
 
 #ourCol {
