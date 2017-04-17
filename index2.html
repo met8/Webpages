@@ -90,10 +90,14 @@
 		var passC = $('#passwordC').val()
 		
 		if (pass !== passC) { 
-			$('#passwordMatch').append("<p class='red' id='passwordMatchText'> Passwords do not match, please make sure they are the same! </p>");
+			$('#passwordMatch').html("<p class='red' id='passwordMatchText'> Passwords do not match, please make sure they are the same! </p>");
 		}
 		else {
-			backandSDK.resetPassword(pass, token)
+			if (pass.length > 6) {
+			backandSDK.resetPassword(pass, token) }
+			else {
+			$('#passwordMatch').html("<p class='red' id='passwordMatchText'> Please make sure your password is at least 6 characters! </p>");
+
         }
 	}
 	
