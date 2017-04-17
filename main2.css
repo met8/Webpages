@@ -29,8 +29,20 @@
  
  }
  
+ #passwordMatch {
+	 text-align: left;
+ }
  
- #ourCol {
+  #passwordMatchText {
+	 text-align: left;
+ }
+  
+ .red {
+	 color: red;
+ }
+ 
+.green {
+	 color: green;
  }
  
  #forum {
